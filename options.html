@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>拡大倍率設定</title>
+  <title>拡大設定</title>
 </head>
 <body>
-  <h1>拡大倍率設定</h1>
+  <h1>拡大設定</h1>
   <label for="zoom-level">拡大倍率 (例: 1.5, 2, 3):</label>
   <input type="number" id="zoom-level" step="1" min="1" value="2">
   <button id="save-button">保存</button>
+  <br><br>
+  <label for="enable-zoom">拡大を有効にする:</label>
+  <input type="checkbox" id="enable-zoom" checked>
   <p id="status"></p>
   <script src="options.js"></script>
 </body>
