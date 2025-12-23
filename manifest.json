@@ -1,0 +1,25 @@
+{
+  "name": "Image Zoom Extension",
+  "description": "Click to zoom images with filtering",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://ccfolia.com/rooms/*"
+  ],
+  "action": {
+    "default_popup": "options.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "content_scripts": [
+    { "matches": [ "https://ccfolia.com/rooms/*" ], "js": [ "content.js" ] }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
